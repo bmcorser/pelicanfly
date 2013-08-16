@@ -1,11 +1,11 @@
 from pelican import signals
 
 def pelicanfly(pelican_instance):
-    from ipdb import set_trace;set_trace()
+    pass
 
 def gen_init(generator_instance):
-    from ipdb import set_trace;set_trace()
+    pass
 
 def register():
-    signals.initialized.send(pelicanfly)
-    signals.generator_init.send(gen_init)
+    signals.initialized.connect(pelicanfly)
+    signals.generator_init.connect(gen_init)
