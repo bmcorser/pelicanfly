@@ -5,13 +5,17 @@ def readme():
         return f.read()
 
 setup(name='pelicanfly',
-      version='0.1',
+      version='0.1.8',
       description='Font Awesome from inside a Pelican',
       long_description=readme(),
       url='http://bmcorser.github.com/pelicanfly',
       author='bmcorser',
       author_email='benmarshallcorser@gmail.com',
       license='GPL',
+      include_package_data=True,
       packages=['pelicanfly'],
-      install_requires=['pelican', 'markdown'],
-      zip_safe=False)
+      package_dir={'pelicanfly': 'pelicanfly'},
+      package_data={'pelicanfly': ['static/css/*', 'static/font/*']},
+      install_requires=['pelican', 'fontawesome_markdown'],
+      zip_safe=False,
+      )
