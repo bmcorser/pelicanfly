@@ -1,21 +1,20 @@
+============
 Introduction
-------------
+============
 
-This is pelicanfly, it minimally extends Markdown[1] and provides a plugin for
-pelican[2] that adds the static assets to support this extension. If you just
-want the Markdown extension, it is available separately[3]. Pelicanfly offers
-shorthand codes for adding FontAwesome[4] icons to Markdown documents under
-pelican.
+This is Pelicanfly, a plugin for `Pelican`__ that lets you type things like ``i
+♥ :icon-coffee:`` in your `Markdown`__ documents and have the icon prefixed tag
+come out as little icons in the browser. It provides a minimal extension to
+Markdown and a plugin for pelican.
 
-FontAwesome
------------
+The pelican plugin hacks in some static assets to make this work from pelican
+"out of the box".  If you just want the Markdown extension, it is available
+`separately`__.  Pelicanfly offers shorthand codes for adding `FontAwesome`__
+icons to Markdown documents under Pelican.
 
-FontAwesome assets are included through the use of a git submodule[5].
-Consequently, releases of this package might just be updates to that. Equally,
-this package may contain old versions of FontAwesome assets.
+__ `http://daringfireball.net/projects/markdown/`_
+__ `http://docs.getpelican.com/`_
+__ `http://bmcorser.github.com/markdown-fontawesome/`_
+__ `http://fortawesome.github.io/Font-Awesome/`_
 
-[1] http://daringfireball.net/projects/markdown/
-[2] http://docs.getpelican.com/
-[3] http://bmcorser.github.com/markdown-fontawesome/
-[4] http://fortawesome.github.io/Font-Awesome/
-[5] http://git-scm.com/book/en/Git-Tools-Submodules
+It's probably going to work in a better way by version 0.3.
