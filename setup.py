@@ -1,11 +1,11 @@
 from setuptools import setup
 
 def readme():
-    with open('README.rst') as f:
+    with open('README') as f:
         return f.read()
 
 setup(name='pelicanfly',
-      version='0.1.8',
+      version='0.1.9',
       description='Font Awesome from inside a Pelican',
       long_description=readme(),
       url='http://bmcorser.github.com/pelicanfly',
