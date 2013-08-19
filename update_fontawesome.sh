@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# should be run in place
+
 root=$(pwd)
 temp_dir=$root/update-fontawesome
 remote_url=https://github.com/FortAwesome/Font-Awesome.git 
@@ -31,7 +33,6 @@ do
     then
         echo "Changes detected!"
         git commit -m "Auto-merge for subtree of ${name} from ${remote_url}"
-        merges+=(${name})
     else
         echo "No changes here."
         git merge --abort
