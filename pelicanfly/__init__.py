@@ -8,10 +8,11 @@ def add_markdown_plugin(peli):
     md_ext = peli.settings.get('MD_EXTENSIONS')
     cls = FontAwesomeExtension
     inst = cls()
-    if md_ext and any([isinstance(ext, cls) for ext in md_ext]):
-        md_ext.append(inst)
-    else:
+    if not md_ext:
         peli.settings['MD_EXTENSIONS'] = [inst]
+    elif not any([isinstance(ext, cls) for ext in md_ext]):
+        md_ext.append(inst)
+        peli.settings['MD_EXTENSIONS'] = md_ext
 
 
 def publish_fontawesome_assets(peli):
