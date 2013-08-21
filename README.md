@@ -17,17 +17,19 @@ Installation
 
 It's not hard, just install via pip:
 
-    :::shell
-    (env)$ pip install pelicanfly
+```shell
+(env)$ pip install pelicanfly
+```
 
 Then add to your Pelican settings, under `PLUGINS` as follows:
 
-    :::python
-    PLUGINS = [
-        # ...
-        'pelicanfly',
-        # ...
-    ]
+```python
+PLUGINS = [
+    # ...
+    'pelicanfly',
+    # ...
+]
+```
 
 If you have followed these steps correctly, next time you build your Pelican
 blog, pelicanfly will do its magic and convert all the `:icon-heart:` style
