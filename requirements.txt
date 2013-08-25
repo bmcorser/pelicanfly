@@ -1,0 +1,2 @@
+-e git+https://github.com/bmcorser/pelican.git@b144c3c#egg=pelican
+-e git+https://github.com/bmcorser/pelicanfly.git#egg=pelicanfly
