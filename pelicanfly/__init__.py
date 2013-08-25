@@ -1,1 +1,1 @@
-from .pelicanfly import *
+from .pelicanfly import register
