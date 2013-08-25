@@ -1,5 +1,6 @@
 Introduction
 ============
+[![Build Status](https://travis-ci.org/bmcorser/pelicanfly.png?branch=master)](https://travis-ci.org/bmcorser/pelicanfly)
 
 This is **pelicanfly**, a plugin for [Pelican](http://docs.getpelican.com/)
 that lets you type things like `i ♥ :icon-coffee:` in your
