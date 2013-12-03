@@ -6,7 +6,7 @@ root=$(pwd)
 temp_dir=$root/update-fontawesome
 remote_url=https://github.com/FortAwesome/Font-Awesome.git 
 remote=fontawesome
-desired_dirs=(font css)
+desired_dirs=(fonts css)
 
 mkdir $temp_dir
 cd $temp_dir
@@ -22,7 +22,7 @@ do
     :
     cd ${main_repo}
     echo "Splitting subtree for ${name}..."
-    git subtree split --prefix=${name}/ -b ${name}
+    git subtree split --prefix=${name}/ -b ${name} > /dev/null 2>&1
     cd $root
     echo "Fetching new branch..."
     git fetch ${remote}
@@ -32,6 +32,7 @@ do
     if [ "${changes}" -gt 0 ]
     then
         echo "Changes detected!"
+        git add .
         git commit -m "Auto-merge for subtree of ${name} from ${remote_url}"
     else
         echo "No changes here."

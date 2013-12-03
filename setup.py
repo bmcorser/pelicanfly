@@ -15,7 +15,7 @@ setup(name='pelicanfly',
       include_package_data=True,
       packages=['pelicanfly'],
       package_dir={'pelicanfly': 'pelicanfly'},
-      package_data={'pelicanfly': ['static/css/*', 'static/font/*']},
+      package_data={'pelicanfly': ['static/css/*', 'static/fonts/*']},
       install_requires=['pelican', 'fontawesome_markdown'],
       zip_safe=False,
       )

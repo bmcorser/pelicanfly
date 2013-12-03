@@ -49,7 +49,7 @@ class TestPelicanfly(unittest.TestCase):
         self.assertTrue('<i class="icon icon-bug"></i>' in sample_output.read())
 
     def test_assets_exist(self):
-        for static_dir in ['css', 'font']:
+        for static_dir in ['css', 'fonts']:
             static_path = os.path.join(self.pelicanfly_static, static_dir)
             for static_file in os.listdir(static_path):
                 in_theme = os.path.join(self.temp_path, 'theme',
