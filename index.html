@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Fly, pelican, fly! by bmcorser</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Fly, pelican, fly!</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/bmcorser/pelicanfly">View the Project on GitHub <small>bmcorser/pelicanfly</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/bmcorser/pelicanfly/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/bmcorser/pelicanfly/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/bmcorser/pelicanfly">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h1>
+
+<p><a href="https://travis-ci.org/bmcorser/pelicanfly"><img src="https://travis-ci.org/bmcorser/pelicanfly.png?branch=master" alt="Build Status"></a></p>
+
+<p>This is <strong>pelicanfly</strong>, a plugin for <a href="http://docs.getpelican.com/">Pelican</a>
+that lets you type things like <code>i ♥ :fa-coffee:</code> in your
+<a href="http://daringfireball.net/projects/markdown/">Markdown</a> documents and have it
+come out as little <a href="http://fontawesome.io/">Font Awesome</a> icons in the browser.
+It provides a minimal extension to Markdown and a plugin for Pelican.</p>
+
+<p>The Pelican plugin hacks in some static assets to make this work with
+Pelican "out of the box". If you just want the Markdown extension, it is
+available
+<a href="http://bmcorser.github.com/markdown-fontawesome/">separately</a>.</p>
+
+<h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<p>It's not hard, just install via pip:</p>
+
+<div class="highlight highlight-bash"><pre><span class="o">(</span>env<span class="o">)</span><span class="nv">$ </span>pip install pelicanfly
+</pre></div>
+
+<p>Then add to your Pelican settings, under <code>PLUGINS</code> as follows:</p>
+
+<div class="highlight highlight-python"><pre><span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c"># ...</span>
+    <span class="s">'pelicanfly'</span><span class="p">,</span>
+    <span class="c"># ...</span>
+<span class="p">]</span>
+</pre></div>
+
+<p>If you have followed these steps correctly, next time you build your Pelican
+blog, pelicanfly will do its magic and convert all the <code>:fa-heart:</code> style tags
+into proper nice little Font Awesome icons. Job done!</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/bmcorser">bmcorser</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
