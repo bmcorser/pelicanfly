@@ -1,2 +1,2 @@
--e git+https://github.com/bmcorser/pelican.git@b144c3c#egg=pelican
--e git+https://github.com/bmcorser/pelicanfly.git#egg=pelicanfly
+pelican
+fontawesome-markdown==0.2.1
