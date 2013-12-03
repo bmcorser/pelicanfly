@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='pelicanfly',
-      version='0.3',
+      version='0.4.1',
       description='Font Awesome from inside a Pelican',
       long_description=readme(),
       url='http://bmcorser.github.com/pelicanfly',

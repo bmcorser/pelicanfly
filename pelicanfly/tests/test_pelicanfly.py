@@ -46,7 +46,7 @@ class TestPelicanfly(unittest.TestCase):
 
     def test_markdown_plugin(self):
         sample_output = open(os.path.join(self.temp_path, 'pages', 'a-sample-page.html'), 'r')
-        self.assertTrue('<i class="icon icon-bug"></i>' in sample_output.read())
+        self.assertTrue('<i class="fa fa-bug"></i>' in sample_output.read())
 
     def test_assets_exist(self):
         for static_dir in ['css', 'fonts']:
