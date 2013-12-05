@@ -35,3 +35,7 @@ PLUGINS = [
 If you have followed these steps correctly, next time you build your Pelican
 blog, pelicanfly will do its magic and convert all the `:fa-heart:` style tags
 into proper nice little Font Awesome icons. Job done!
+
+FontAwesome updates
+===================
+I try to keep this repo up to date with FontAwesome, but if it's not, feel free to submit a PR (you can run the hand `update_fontawesome.sh` script to download their assets).
