@@ -11,7 +11,7 @@ It provides a minimal extension to Markdown and a plugin for Pelican.
 The Pelican plugin hacks in some static assets to make this work with
 Pelican "out of the box". If you just want the Markdown extension, it is
 available
-[separately](http://bmcorser.github.com/markdown-fontawesome/).
+[separately](http://bmcorser.github.com/fontawesome-markdown/).
 
 Installation
 ============
