@@ -39,5 +39,5 @@ into proper nice little Font Awesome icons. Job done!
 FontAwesome updates
 ===================
 I try to keep this repo up to date with FontAwesome, but if it's not, feel free
-to submit a PR (you can run the hand `update_fontawesome.sh` script to download
-their assets).
+to submit a PR (the handy `update_fontawesome.sh` script to download will do some
+of the lifting to download their assets).
