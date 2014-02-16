@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# should be run in place
+# should be run in place yo
 
 root=$(pwd)
 temp_dir=$root/update-fontawesome
