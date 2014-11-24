@@ -7,11 +7,12 @@ temp_dir=$root/update-fontawesome
 remote_url=https://github.com/FortAwesome/Font-Awesome.git 
 remote=fontawesome
 desired_dirs=(fonts css)
+HEAD=$(git rev-parse HEAD)
 
 mkdir $temp_dir
 cd $temp_dir
 
-git clone $remote_url $remote
+git clone --depth 1 $remote_url $remote
 
 main_repo=$temp_dir/$remote
 cd $root
@@ -28,6 +29,7 @@ do
     git fetch ${remote}
     echo "Pulling changes for ${name} into index..."
     git merge -X subtree=pelicanfly/static/${name} remotes/${remote}/${name} --no-commit
+    git checkout --theirs pelicanfly/static/${name}
     changes=$(git status --porcelain 2>/dev/null | grep "^[MA]" | wc -l)
     if [ "${changes}" -gt 0 ]
     then
@@ -37,6 +39,7 @@ do
     else
         echo "No changes here."
         git merge --abort
+        git reset --hard ${HEAD}
     fi
 done
 
