@@ -28,11 +28,9 @@ do
     echo "Fetching new branch..."
     git fetch ${remote}
     echo "Pulling changes for ${name} into index..."
-    # git rm -rf pelicanfly/static/${name}
-    # git commit -m 'Avoiding conflict'
     git merge -X subtree=pelicanfly/static/${name} remotes/${remote}/${name} --no-commit
+    git checkout --theirs pelicanfly/static/${name}
     changes=$(git status --porcelain 2>/dev/null | grep "^[MA]" | wc -l)
-    exit
     if [ "${changes}" -gt 0 ]
     then
         echo "Changes detected!"
