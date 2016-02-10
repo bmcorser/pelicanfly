@@ -6,7 +6,6 @@ import unittest
 
 from pelican import Pelican
 from pelican.settings import read_settings
-from pelican.tests.support import mute
 
 from fontawesome_markdown import FontAwesomeExtension
 import pelicanfly
@@ -28,7 +27,7 @@ class TestPelicanfly(unittest.TestCase):
                                           'OUTPUT_PATH': self.temp_path,
                                           'PLUGINS': [pelicanfly]})
         self.pelican = Pelican(self.settings)
-        mute(True)(self.pelican.run)()
+        self.pelican.run()
         pass
 
     def tearDown(self):
